@@ -1,0 +1,283 @@
+/* Empty. Add your own CSS if you like */
+
+.colorBar{
+    background-color: rgba(186, 37, 49, 0.94);
+    
+}
+
+.space{
+    padding-right: 50px;
+    line-height: 20px;
+}
+
+.-space{
+    
+    padding-left: 50px;
+    line-height: 20px;
+}
+
+#fz{
+    font-size: 40px;
+    
+
+}
+
+.cen {
+    text-align: center;
+}
+.sp{
+        padding-right: 30px;
+        margin-top: 30px;
+        font-size: 40px;
+    
+}
+
+.list i {
+    font-size: 20px;
+}
+
+#welcome{
+    
+    line-height: 80px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #d6c4c4
+}
+#bg {
+    background-color: #898585;
+    
+}
+/*
+#bg {
+    background: url(http://i.imgur.com/hgzVvzN.jpg);
+    background-attachment:fixed;
+    background-position: center;
+}
+
+ .list, .item       {
+    background: transparent;
+}
+*/
+
+/* Empty. Add your own CSS if you like */
+.grey{
+    background-color: darkgrey;
+}
+
+
+
+  .ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+  }
+
+
+
+.s{
+    background-color: #6e1fa0;
+}
+.s p{
+    color:#ebe2e2;
+    font-size: 17px;
+    line-height: 20px;
+     text-align: center;
+}
+.style ion-item{
+    line-height: 20px;
+    
+}
+
+.style #up{
+    
+    margin-top: 20px;
+}
+.style ion-item p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+#scroll{
+    height: 260px;
+    overflow: scroll;
+    white-space: nowrap;
+    min-height: 260px;
+    
+    
+}
+
+
+#home_srch{
+    background-color: #817c86;
+    
+}
+
+
+.wide-as-needed {
+  overflow: scroll;
+  white-space: nowrap;
+   
+}
+.scroll { 
+  min-width: 100%;
+    height: 100%;
+}
+
+.round-button{
+    border-radius: 50%;
+    background-color: whitesmoke;
+    width: 12%;
+    height: 60%;        
+}
+.round-button i{
+    text-align: center;
+    font-size: 200%;
+    
+}
+
+.round-button #span{
+    text-align: center;
+   
+}
+
+$scope.options = {
+  loop: false,
+  effect: 'fade',
+  speed: 500,
+}
+.pink{
+    background-color: deeppink;
+}
+
+.blue{
+    background-color: darkblue;
+}
+
+.yellow{
+    background-color: yellowgreen;
+}
+
+.purple{
+    background-color: purple;
+}
+.peach{
+    background-color: peachpuff;
+}
+.black{
+    background-color: black;
+    
+}
+.black h1{
+    color:white;
+}
+.slid{
+    height: 150px;
+    margin-top: 0px;
+}
+#u-p{
+    margin-top: 0px;
+}
+
+#img-test{
+    height: 200px;
+    width: 100%;
+}
+#test{
+    height:240px;
+}
+
+
+#shadowcard{
+     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+/*
+a{
+    text-decoration: none;
+    color: black;
+}*/
+
+#safety ul {
+    text-align: justify;
+    text-decoration-line: underline;
+}
+
+.crd-btn{
+    background-color: black;
+}
+
+/*
+
+
+
+*/
+
+.slider{
+    height: 100px;
+    width:100%; 
+}
+.slider-slide{
+    color: #000;
+    background-color:   #fff;
+    height: 100%;
+    width:100%;
+}
+
+
+#cat-img img{
+    position: relative;
+  
+}
+
+
+#cat-img h2{
+    position: absolute;
+    top: 150px;
+    left: 0;
+/*    opacity: 0.9;*/
+    right: -82px;
+    font-size: 1.8em;
+       
+}
+
+#cat-img h2 span{
+    color: white;
+    font: bold 24px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    background: rgb(0,0,0);
+/*background: rgba(0,0,0,0.7);*/
+    padding: 50px;
+    margin-left: 50px;
+    opacity: 0.4;
+    position: relative;
+    right:  70px;
+    
+    
+}
+
+
+
+#card-view img{
+/*    width: 140px;*/
+    height: 180px;
+    
+}
+

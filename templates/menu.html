@@ -1,0 +1,127 @@
+<ion-side-menus enable-menu-with-back-views="false" >
+  <ion-side-menu-content >
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+  
+  
+  
+  <ion-side-menu side="left" >
+    <ion-header-bar class="bar-dark">
+      <h1 class="title">AskariAd</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+       
+         <ion-item id="bg">
+            
+                  <div style="float:left;padding-right: 10px;">
+                     <ionic-letter-avatar data="Fuki" shape="round" ></ionic-letter-avatar>
+                  </div>
+                  <div>
+                     <h2>Welcome </h2>
+                     <p style="color:#d1cdcd;font-size:14px;font-weight:300;"> ASKARI-AD ONLINE SHOP </p>
+                  </div>
+              
+           
+            
+        </ion-item>
+        
+        
+         <ion-item menu-close href="#/app/home" >
+        <i class="fa fa-home space"></i> Home
+        </ion-item>
+        
+         <ion-item menu-close href="#/app/submit" >
+        <i class="fa fa-plus space"></i>  Submit an Ad
+        </ion-item>
+        
+        
+         <ion-item menu-close href="#/app/browse" >
+        <i class="fa fa-th space"></i>  Browse
+        </ion-item>
+        
+         <ion-item menu-close href="#/app/chat" >
+        <i class="fa fa-comment space"></i>  Chat
+        </ion-item>
+         
+        
+        
+         <div class="item item-divider">
+                <h2>Categories</h2>
+          </div>
+          
+        <ion-list ng-controller='category' >
+       
+        <ion-item menu-close href="#/app/category/{{topic.id}}" ng-repeat="topic in data">
+            <i class="fa fa-motorcycle space"></i> {{topic.name}}
+        </ion-item>   
+<!--
+          
+        <ion-item menu-close href="#/app/category" >
+        <i class="fa fa-motorcycle space"></i>  Bikes
+        </ion-item>
+       
+            <ion-item menu-close href="#/app/category">
+         <i class="fa fa-book space"></i> Books/Sports/Hobbies
+        </ion-item>       
+       
+        <ion-item menu-close href="#/app/category">
+         <i class="fa fa-usb space"></i> Electronic & Appliances
+        </ion-item>
+       
+          <ion-item menu-close href="#/app/search">
+          Search
+        </ion-item>
+          <ion-item menu-close href="#/app/playlists">
+          Playlists
+        </ion-item>
+         
+           <ion-item menu-close href="#/app/category">
+           <i class="fa fa-shopping-bag space"></i>Fashion
+        </ion-item>
+        <ion-item menu-close href="#/app/category">
+            <i class="fa fa-bed space"></i> Furniture
+        </ion-item>
+       
+        <ion-item menu-close href="#/app/category">
+            <i class="fa fa-money space"></i> Jobs
+        </ion-item>
+
+          <ion-item menu-close href="#/app/category">
+            <i class="fa fa-child space" ></i>Kids
+        </ion-item>
+        
+        
+         <ion-item menu-close href="#/app/category">
+            <i class="fa fa-mobile space" ></i>Mobile
+        </ion-item>
+         
+           <ion-item menu-close href="#/app/category">
+            <i class="fa fa-paw space" ></i>Pets
+        </ion-item>
+        
+            <ion-item menu-close href="#/app/category">
+            <i class="fa fa-building-o space" ></i>Real Estate
+        </ion-item>
+        
+         <ion-item menu-close href="#/app/category">
+            <i class="fa fa-tasks space" ></i>Services
+        </ion-item>
+-->
+        
+        </ion-list>
+         
+      
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

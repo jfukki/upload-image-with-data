@@ -1,0 +1,68 @@
+<ion-view view-title="Detail View" ng-controller='DetailCtrl'>
+    <ion-content scroll="">
+    <!-- slides -->
+
+ <ion-slides  options="options" slider="data.slider" class="slid">
+    <ion-slide-page >
+      <div class="box blue" id="test" ><img src="http://askariad.com/mobileapp/upload/{{topic.picture}}" style="height:170px;width:100%;"></div>
+    </ion-slide-page>
+  </ion-slides>
+ 
+ 
+<!-- end of slides -->
+  
+ <div class="list">
+     <div class="item">
+          
+  <div class="list card" id="shadowcard">
+
+  
+  <div class="item item-body">
+   
+    <p>
+      {{topic.message}}
+    </p>
+    
+    <h1><p style="color:red;font-size:14px;">Rs:{{topic.product_price}}</p></h1>
+    
+    
+  </div>
+  
+</div>
+  
+  <p><span style="color:#ce1010;font-size:1.2em;text-align: center;">PLEASE ONLY SERIOUS BUYERS CONACT </span>
+    </p>
+    <p>contact number: 0345467866</p>
+    
+  
+     </div>
+     
+     
+      <a class="item" href="#/app/home">
+         <i class="ion-flag space" style="color:red; font-size:20px;"></i>Report Ad
+     </a>
+     
+     
+     <div class="list list-inset">
+
+    <div class="item" id="safety">
+    <h2>Safety tips!</h2>
+   
+        <ul>
+            <li>Never transfer money in advance</li>
+            <li>Meet the seller at a public place</li>
+            <li>Avoid tems with unrealistic prices</li>
+            <li>Don't proceed if something seems wrong</li>
+        </ul>
+        
+    </div>
+
+    
+
+</div>
+     
+ </div>
+ 
+ 
+</ion-content>
+</ion-view>

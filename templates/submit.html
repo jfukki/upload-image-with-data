@@ -1,0 +1,127 @@
+<ion-view view-title="Submit Ad">
+    <ion-content>
+
+
+          <div class="card">
+  <div class="item item-text-wrap cen">
+  <div>
+        <button class="button button-icon ion-camera space" ng-click="takePicture(1)" id="fz"></button>
+           <span class="sp">|</span>
+      <button class="button button-icon ion-image space" ng-click="takePicture(2)" id="fz"></button>
+   
+  </div>
+    <!--
+     <i class="ion-camera space" id="fz" ng-click="upload()"></i>
+      <button class="button button-icon ion-camera space" ng-click="upload()" id="fz"></button> <span class="sp">|</span> <button class="button button-icon ion-camera-space" ng-click="gallery()" id="fz"> <i class="ion-camera -space" id="fz"></i> -->
+    <p>Capture Or Pick Picture From Gallery</p>
+      </div>
+</div>
+
+
+
+
+    <div class="card">
+      <div class="item item-text-wrap">
+      <form action="">
+       
+       <label class="item item-input item-stacked-label">
+        <span class="input-label">Title</span>
+        <input type="text" ng-model="topic.title" placeholder="eg Apple ipad mini 32GB WIFI+ Cellular ">
+       </label>
+ 
+      
+          <div class="card">
+              <div class="item item-text-wrap">
+                 <label class="item item-input item-select">
+                <div class="input-label">
+                  Category
+                </div>
+                <select ng-model="topic.cat">
+    
+                   <option value="{{cat.name}}" ng-repeat="cat in data_cat">{{cat.name}}</option>
+                </select>
+              </label>
+
+              </div>
+            </div>
+       
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Description</span>
+            <textarea rows="3" required
+            placeholder="Enter Complete Description" ng-model="topic.message"></textarea>
+          </label>
+
+             <label class="item item-input item-stacked-label">
+            <span class="input-label">Your name</span>
+            <input type="text" ng-model="topic.name" placeholder="Enter your name">
+        </label>
+
+         
+          <label for="">
+        
+               <div class="card">
+              <div class="item item-text-wrap">
+                 <label class="item item-input item-select">
+                <div class="input-label">
+                  City
+                </div>
+                <select ng-model="topic.city">
+
+                  <option value="{{topic.name}}" ng-repeat="topic in data">{{topic.name}}</option>
+<!--
+                  <option vlaue="karachi" >Karachi</option>
+                  <option value="gujranwala" >Gujranwala</option>
+                  <option value="sargoda" >Sargoda</option>
+-->
+                </select>
+              </label>
+
+              </div>
+            </div>
+
+              
+              
+               <div class="card" >
+              <div class="item item-text-wrap">
+                 <label class="item item-input item-select">
+                <div class="input-label">
+                  Location
+                </div>
+                <select ng-model="topic.location" >
+
+                  <option value="{{loc.name}}" ng-repeat="loc in data_location" >{{loc.name}}</option>
+<!--
+                  <option vlaue="walton" >Walton</option>
+                  <option value="dha" >DHA</option>
+-->
+                </select>
+              </label>
+
+              </div>
+            </div>
+
+
+          <label for="" class="item item-input">
+              <input type="text" placeholder="Phone Number" ng-model="topic.ph_no">
+          </label>
+
+
+          <label for="" class="item item-input">
+              <input type="text" placeholder="Price" ng-model="topic.product_price">
+          </label>
+
+
+          </label>
+
+
+      </form>
+      </div>
+    </div>
+
+   <button class="button button-block button-assertive" ng-click="post(topic)">Submit</button>
+
+   <ion-item>
+       
+   </ion-item>
+    </ion-content>
+</ion-view>
